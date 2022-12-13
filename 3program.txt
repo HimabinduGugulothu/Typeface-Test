@@ -1,0 +1,23 @@
+q:Design a datastore to save monitoring data of a service. Assume the service has 100 APIs and there are 1000 users who are roughly making 1 million requests per day. Some of the sample queries that will be performed on this datastore
+
+- Get the API with maximum average response time across the users.
+- Get the API with maximum average response time for each user.
+- Get error percentage of each API in buckets of 1 hours for 24 hours.
+
+
+solution:
+
+APIs that are considered high-performing have an average response time between 0.1 and one second.
+
+--> Get the API with maximum average response time across the users.
+
+step 1: Method of calculating metrics gathered by each API response time test tool.
+Step 2: Tools Simulate the load and capture speed which can make a difference in the response time.
+Step 3: Extra items recorded when monitoring user loads.
+step 4: Computing metrics gathered by each tool increases the response time due to high resource consumption.
+Step 5: The architecture of the two tools may be different.
+The API with maximum average response time across the users is 0.01
+
+--> The API with maximum average response time for each user is  1 second .
+
+-->Get error percentage of each API in buckets of 1 hours for 24 hours is 120 requests within 60 seconds.
